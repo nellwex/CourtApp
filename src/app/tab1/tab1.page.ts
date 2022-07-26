@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NewsService } from '../service/news.service';
+import { News } from '../model/news.model';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +9,15 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  news: News[] = [];
+
+  constructor( 
+    private newsService : NewsService) { }
+
+  ngOnInit() {
+
+this.news = this.newsService.getNews();
+
+  }
 
 }

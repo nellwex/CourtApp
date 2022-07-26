@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>會員登入</ion-title>
+  </ion-toolbar>
+  
+  
+</ion-header>
+
+
+
+  <ion-content class="ion-padding">
+    <ion-item class="ion-margin-vertical">
+      <ion-label>帳號：</ion-label><ion-input clearInput value="" placeholder="請輸入使用者帳號或email" [(ngModel)]="userName"></ion-input>
+    </ion-item>
+      <ion-item class="ion-margin-vertical">
+      <ion-label>密碼：</ion-label><ion-input value="" placeholder="請輸入使用者密碼" type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+    <div class="ion-margin-vertical">
+      <ion-button color="primary" expand="full" (click)="onSignin()">Sign In</ion-button>
+    </div>
+    <ion-item *ngIf="!validUser" style="color: red;"> 
+      錯誤的使用者或密碼
+    </ion-item>
+  
+  
+  </ion-content>
+ 
+
+
