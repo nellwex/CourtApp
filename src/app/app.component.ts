@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GoogleMap } from '@capacitor/google-maps';
 
 @Component({
   selector: 'app-root',

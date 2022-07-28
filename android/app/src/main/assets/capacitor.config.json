@@ -1,0 +1,6 @@
+{
+	"appId": "court.app",
+	"appName": "SportCourtApp",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
