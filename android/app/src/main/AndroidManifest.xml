@@ -13,6 +13,7 @@
 <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyAQrN5OLjwPVDoVjuMmon4hMjLk8bZrJv8"/>
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-feature android:name="android.hardware.location.gps" />
         <activity
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode"
             android:name="court.app.MainActivity"
